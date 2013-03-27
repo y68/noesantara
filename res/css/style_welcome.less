@@ -1,0 +1,124 @@
+*
+{
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+@red 			: #EB2917;
+
+@red_5 			: darken(@red, 5%);
+@red_10 		: darken(@red, 10%);
+@red_15 		: darken(@red, 15%);
+@red_20 		: darken(@red, 20%);
+@red_25 		: darken(@red, 25%);
+@red_30 		: darken(@red, 30%);
+@red_35 		: darken(@red, 35%);
+@red_40 		: darken(@red, 40%);
+@red_45 		: darken(@red, 45%);
+@red_50 		: darken(@red, 50%);
+
+@red_5_r		: lighten(@red, 5%);
+@red_10_r		: lighten(@red, 10%);
+@red_15_r		: lighten(@red, 15%);
+@red_20_r		: lighten(@red, 20%);
+@red_25_r		: lighten(@red, 25%);
+@red_30_r		: lighten(@red, 30%);
+@red_35_r		: lighten(@red, 35%);
+@red_40_r		: lighten(@red, 40%);
+@red_45_r		: lighten(@red, 45%);
+@red_50_r		: lighten(@red, 50%);
+
+body
+{
+	background: url("../img/bg_landing.png");
+
+	margin: 0;
+	padding: 0;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+	background-size: cover; 
+}
+
+#container
+{
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 100px;
+	img, span, p
+	{
+		display: block;
+		margin: 0 auto;
+		font-family: "Rockwell";
+		text-align: center;
+	}
+
+	span.deck
+	{
+		text-align: center;
+		font-size: 24px;
+		color: white;
+		margin: 20px 0 20px 0;
+		color: white;
+
+		text-shadow: 0px 2px 0px @red_40;
+	}
+
+	p
+	{
+		text-align: center;
+		color: white;
+
+		text-shadow: 0px 2px 0px @red_40;
+	}
+	.buttonarea
+	{
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 30px;
+
+		.button
+		{
+			font-family: "Rockwell";
+			padding: 10px 20px;
+			background-color: @red;
+			color: @red_20;
+
+			text-shadow: 0px 1px 0px @red_10_r;
+
+			text-decoration: none;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-o-border-radius: 5px;
+
+			box-shadow: 0px 3px 0px @red_20, inset 0px -16px 0px @red_5;
+			-webkit-box-shadow: 0px 3px 0px @red_20, inset 0px -16px 0px @red_5;
+			-o-box-shadow: 0px 3px 0px @red_20, inset 0px -16px 0px @red_5;
+
+			&:hover
+			{
+				color: @red_40;
+				background-color: @red;
+
+				box-shadow: 0px 3px 0px @red_30, inset 0px -16px 0px @red_10;
+				-webkit-box-shadow: 0px 3px 0px @red_30, inset 0px -16px 0px @red_10;
+				-o-box-shadow: 0px 3px 0px @red_30, inset 0px -16px 0px @red_10;
+			}
+		}
+	}
+
+	span#copy
+	{
+		margin-top: 50px;
+		font-size: 10px;
+		color: @red_30;
+	}
+}

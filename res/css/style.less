@@ -1,0 +1,567 @@
+@font-face {
+  font-family: 'Rockwell';
+  src: url('../fonts/ROCK.TTF');
+}
+
+body, *
+{
+	padding: 0;
+	margin: 0;
+	font-family: Rockwell;
+
+
+}
+
+body
+{
+
+	margin: 0;
+	padding: 0;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+	background-size: cover; 
+}
+*
+{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 0.8s ease;
+}
+
+/*
+----------------------
+COLOR DEFS SECTION
+----------------------
+*/
+
+@red 			: #EB2917;
+
+@red_5 			: darken(@red, 5%);
+@red_10 		: darken(@red, 10%);
+@red_15 		: darken(@red, 15%);
+@red_20 		: darken(@red, 20%);
+@red_25 		: darken(@red, 25%);
+@red_30 		: darken(@red, 30%);
+@red_35 		: darken(@red, 35%);
+@red_40 		: darken(@red, 40%);
+@red_45 		: darken(@red, 45%);
+@red_50 		: darken(@red, 50%);
+
+@red_5_r		: lighten(@red, 5%);
+@red_10_r		: lighten(@red, 10%);
+@red_15_r		: lighten(@red, 15%);
+@red_20_r		: lighten(@red, 20%);
+@red_25_r		: lighten(@red, 25%);
+@red_30_r		: lighten(@red, 30%);
+@red_35_r		: lighten(@red, 35%);
+@red_40_r		: lighten(@red, 40%);
+@red_45_r		: lighten(@red, 45%);
+@red_50_r		: lighten(@red, 50%);
+
+//------------------------------------
+
+@white 			: #FFEBB8;
+
+@white_5 		: darken(@white, 5%);
+@white_10 		: darken(@white, 10%);
+@white_15 		: darken(@white, 15%);
+@white_20 		: darken(@white, 20%);
+@white_25 		: darken(@white, 25%);
+@white_30 		: darken(@white, 30%);
+@white_35 		: darken(@white, 35%);
+@white_40 		: darken(@white, 40%);
+@white_45 		: darken(@white, 45%);
+@white_50 		: darken(@white, 50%);
+
+@white_5_r		: lighten(@white, 5%);
+@white_10_r		: lighten(@white, 10%);
+@white_15_r		: lighten(@white, 15%);
+@white_20_r		: lighten(@white, 20%);
+@white_25_r		: lighten(@white, 25%);
+@white_30_r		: lighten(@white, 30%);
+@white_35_r		: lighten(@white, 35%);
+@white_40_r		: lighten(@white, 40%);
+@white_45_r		: lighten(@white, 45%);
+@white_50_r		: lighten(@white, 50%);
+
+//-------------------------------------
+
+@whote 			: #ADA558;
+
+@whote_5 		: darken(@whote, 5%);
+@whote_10 		: darken(@whote, 10%);
+@whote_15 		: darken(@whote, 15%);
+@whote_20 		: darken(@whote, 20%);
+@whote_25 		: darken(@whote, 25%);
+@whote_30 		: darken(@whote, 30%);
+@whote_35 		: darken(@whote, 35%);
+@whote_40 		: darken(@whote, 40%);
+@whote_45 		: darken(@whote, 45%);
+@whote_50 		: darken(@whote, 50%);
+
+@whote_5_r		: lighten(@whote, 5%);
+@whote_10_r		: lighten(@whote, 10%);
+@whote_15_r		: lighten(@whote, 15%);
+@whote_20_r		: lighten(@whote, 20%);
+@whote_25_r		: lighten(@whote, 25%);
+@whote_30_r		: lighten(@whote, 30%);
+@whote_35_r		: lighten(@whote, 35%);
+@whote_40_r		: lighten(@whote, 40%);
+@whote_45_r		: lighten(@whote, 45%);
+@whote_50_r		: lighten(@whote, 50%);
+
+//------------------------------------
+
+@green 			: #20421B;
+
+@green_5 		: darken(@green, 5%);
+@green_10 		: darken(@green, 10%);
+@green_15 		: darken(@green, 15%);
+@green_20 		: darken(@green, 20%);
+@green_25 		: darken(@green, 25%);
+@green_30 		: darken(@green, 30%);
+@green_35 		: darken(@green, 35%);
+@green_40 		: darken(@green, 40%);
+@green_45 		: darken(@green, 45%);
+@green_50 		: darken(@green, 50%);
+
+@green_5_r		: lighten(@green, 5%);
+@green_10_r		: lighten(@green, 10%);
+@green_15_r		: lighten(@green, 15%);
+@green_20_r		: lighten(@green, 20%);
+@green_25_r		: lighten(@green, 25%);
+@green_30_r		: lighten(@green, 30%);
+@green_35_r		: lighten(@green, 35%);
+@green_40_r		: lighten(@green, 40%);
+@green_45_r		: lighten(@green, 45%);
+@green_50_r		: lighten(@green, 50%);
+
+//-------------------------------------
+
+@groon 			: #072111;
+
+@groon_5 		: darken(@groon, 5%);
+@groon_10 		: darken(@groon, 10%);
+@groon_15 		: darken(@groon, 15%);
+@groon_20 		: darken(@groon, 20%);
+@groon_25 		: darken(@groon, 25%);
+@groon_30 		: darken(@groon, 30%);
+@groon_35 		: darken(@groon, 35%);
+@groon_40 		: darken(@groon, 40%);
+@groon_45 		: darken(@groon, 45%);
+@groon_50 		: darken(@groon, 50%);
+
+@groon_5_r		: lighten(@groon, 5%);
+@groon_10_r		: lighten(@groon, 10%);
+@groon_15_r		: lighten(@groon, 15%);
+@groon_20_r		: lighten(@groon, 20%);
+@groon_25_r		: lighten(@groon, 25%);
+@groon_30_r		: lighten(@groon, 30%);
+@groon_35_r		: lighten(@groon, 35%);
+@groon_40_r		: lighten(@groon, 40%);
+@groon_45_r		: lighten(@groon, 45%);
+@groon_50_r		: lighten(@groon, 50%);
+
+// ----------------------- END OF COLOR DEFS
+
+
+
+
+
+/*
+----------------------
+HEADER STYLING SECTION
+----------------------
+*/
+
+header
+{
+	width: 100%;
+	height: 50px;
+	background: white;
+	position: absolute;
+	top: 0;
+	background: @red;
+	box-shadow: 0px 2px 0px #888;
+	-webkit-box-shadow: 0px 2px 0px #888;
+	-o-box-shadow: 0px 2px 0px #888;
+	z-index: 1001;
+
+	h3
+	{
+		position: absolute;
+		left: 20;
+		top: 10;
+		font-size: 24px;
+		color: white;
+		text-shadow: 0px 2px 0px #000;
+
+		span
+		{
+			font-weight: normal;
+		}
+	}
+
+	ul	
+	{
+		position: absolute;
+		right: 25;
+		top: 15;
+
+		li
+		{
+			list-style-type: none;
+			display: inline;
+
+			a
+			{
+				margin-left: 20px;
+				font-size: 12px;
+				font-weight: bold;
+				text-decoration: none;
+				color: @red_10;
+
+				&:hover
+				{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.separator
+{
+	width: 100%;
+	height: 8px;
+	top: 50px;
+	z-index: 1000;
+	background: @whote_10;
+	background-color: #ccc;
+	position: absolute;
+}
+
+// ----------------------- END OF HEADER
+
+/*
+----------------------
+SIDEBAR STYLING SECTION
+----------------------
+*/
+
+section#sidebar
+{
+	width: 10%;
+	height: 84%;
+	background: @white;
+	background-color: #eee;
+	position: absolute;
+	left: 0;
+	top: 8%;
+
+	legend#quiz
+	{
+		width: 400px;
+		.question
+		{
+			display: block;
+			font-size: 14px;
+			color: #444;
+			padding-bottom: 10px;
+		}
+		a
+		{
+			font-size: 12px;
+			padding: 5px 10px;
+			background-color: #888;
+			color: white;
+			&:hover
+			{
+				cursor: pointer;
+			}
+		}
+	}
+	legend
+	{
+		position: absolute;
+		bottom: 10;
+		left: 10;
+		height: auto;
+		width: auto;
+		border: 1px solid #ddd;
+		background: #dedede;
+		padding: 10px;
+		box-shadow: 0px 4px 0px #ccc;
+
+		ul
+		{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			li
+			{
+				margin-bottom: 10px;
+
+				&.last
+				{
+					margin-bottom: 0px;
+				}
+			}
+		}
+		.icon
+		{
+			width: 14px;
+			height: 14px;
+			border-radius: 50px;
+			display: inline-block;
+		
+			&.tiny		{ background-color: #1C393B; }
+			&.small		{ background-color: #25746F; }
+			&.normal	{ background-color: #BAD39F; }
+			&.medium	{ background-color: #F5C090; }
+			&.large		{ background-color: #E9811A; }
+			&.huge		{ background-color: #DA2431; }
+			&.monster	{ background-color: #A7232C; }
+		}
+
+		h4
+		{
+			display: inline-block;
+			font-size: 12px;
+			font-weight: normal;
+			color: #888;
+			text-shadow: 0px 1px 0px white;
+
+		}
+
+	}
+
+
+
+	ul
+	{
+		width: 50px;
+		margin-left: 10px;
+		margin-top: 20px;
+	li
+	{
+		list-style-type: none;
+
+		i
+		{
+
+			border-radius: 100px;
+			padding: 10px;
+			font-size: 20px;
+			background: @whote;
+			background: #ccc;
+			color: @whote_10;
+			color: #999;
+			box-shadow: inset 0px -3px 0px #aaa;
+			margin-bottom: 5px;
+			text-shadow: 0px 1px 0px white;
+
+			&.first
+			{
+			}
+
+			&:hover
+			{
+				cursor: pointer;
+				color: @white_40_r;
+			}
+
+
+			&.active
+			{
+				color: @whote_50_r;
+				color: white;
+				text-shadow: 0px 3px 0px #888;
+				background: @whote_15;
+				background: #aaa;
+				// box-shadow: inset 0px 2px 0px @whote_30, 0px 1px 0px white;
+				box-shadow: inset 0px 2px 0px #888, 0px 1px 0px white;
+				-webkit-box-shadow: inset 0px 2px 0px #888, 0px 1px 0px white;
+				-o-box-shadow: inset 0px 2px 0px #888, 0px 1px 0px white;
+			}
+		}
+
+	}
+	}
+}
+
+// ----------------------- END OF HEADER
+
+
+/*
+----------------------
+FOOTER STYLING SECTION
+----------------------
+*/
+
+footer
+{
+	width: 100%;
+	height: 50px;
+	background: blue;
+	position: absolute;
+	bottom: 0;
+	background: -moz-linear-gradient(top, #666, #444);
+	background: @red_30;
+	background: #444;
+	border-top: 1px solid #ddd;
+
+	h4
+	{
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+		font-size: 12px;
+		color: @red_40;
+		color: #ddd;
+		text-shadow: 0px 1px 0px black;
+	}
+
+}
+
+// ----------------------- END OF HEADER
+
+
+
+
+
+/*
+----------------------
+MAP STYLING SECTION
+----------------------
+*/
+
+svg
+{
+	width: 90%;
+	height: 100%;
+	margin: 0;
+	float: right;
+}
+
+g#animal
+{
+	display: none;
+}
+path.provinsi
+{
+	fill: #ccc;
+	stroke: #eee;
+	stroke-width: 1px;
+
+	&:hover
+	{
+		fill: #aaa;
+		cursor: pointer;
+	}
+}
+
+.hover
+{
+	fill: #aaa;
+	cursor: pointer;
+}
+
+path[name="foreign"]
+{
+	fill: black;
+}
+
+#map-container
+{
+	background: @white;
+	background-color: #eee;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#status	
+{
+	font-size: 12px;
+	background-color: #222;
+	padding: 5px;
+	color: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px #777;
+	-webkit-box-shadow: 0px 0px 5px #777;
+	-o-box-shadow: 0px 0px 5px #777;
+	display: none;
+}
+
+#popup
+{
+	position: absolute;
+	display: none;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: inset 0px -2px 0px #bbb, 0px 0px 2px #888;
+	-webkit-box-shadow: inset 0px -2px 0px #bbb, 0px 0px 2px #888;
+	-o-box-shadow: inset 0px -2px 0px #bbb, 0px 0px 2px #888;
+	background-color: #ddd;
+
+	p
+	{
+		padding-left: 60px;
+	}
+
+	img
+	{
+		width: 50px;
+		position: absolute;
+	}
+
+	h4
+	{
+		font-size: 14px;
+		margin-top: 5px;
+		color: @red_10;
+		// display: inline;
+		margin-left: 60px;
+	}
+
+	.buttongroup
+	{
+		margin-left: 60px;
+		margin-top: 5px;
+		a
+		{
+			display: inline;
+			text-decoration: none;
+			background-color: @red;
+			padding: 3px 5px;
+			font-size: 12px;
+			border-radius: 3px;
+			color: @red_30_r;
+			box-shadow: inset 0px 2px 0px @red_10_r, inset 0px -2px 0px @red_10;
+			-webkit-box-shadow: inset 0px 2px 0px @red_10_r, inset 0px -2px 0px @red_10;
+			-o-box-shadow: inset 0px 2px 0px @red_10_r, inset 0px -2px 0px @red_10;
+
+			&:hover
+			{
+				background-color: @red_10;
+				color: white;
+				box-shadow: inset 0px 2px 0px @red, inset 0px -2px 0px @red_20;
+				-webkit-box-shadow: inset 0px 2px 0px @red, inset 0px -2px 0px @red_20;
+				-o-box-shadow: inset 0px 2px 0px @red, inset 0px -2px 0px @red_20;
+				cursor: pointer;
+			}
+		}
+	}
+
+}
+
+// ----------------------- END OF MAP 
